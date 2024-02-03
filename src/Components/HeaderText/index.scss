@@ -1,0 +1,42 @@
+.ContainerHalf{
+    width: 1280px;
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    gap: 20px;
+    
+    button{
+     cursor: pointer;   
+     border: none;   
+     background-color: transparent; 
+    }
+}
+
+.LineHeder{
+border: solid 1px #F0F0F0;
+}
+
+.InputText{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    width: 657px;
+    height: 48px;
+    color: #9F9F9F;
+    background-color:#F6F5F2 ;
+    border-radius: 10px;
+    margin: 5px;
+    border: none;
+}
+
+.SizeIMG{
+    width: 32px;
+    height: 32px;
+}
+
+.SizeBox{
+    width: 24px;
+    height: 24px;
+}

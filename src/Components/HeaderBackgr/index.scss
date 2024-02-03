@@ -1,0 +1,72 @@
+.HeadeCategory{
+    width: 1280px;
+    height: 40px;
+   
+    border: solid 1px #F0F0F0;
+  
+    -webkit-box-shadow: -5px 6px 16px -7px rgba(0,0,0,1);
+    -moz-box-shadow: -5px 6px 16px -7px rgba(0,0,0,1);
+    box-shadow: -5px 6px 16px -7px rgba(0,0,0,1);
+}
+
+.StruturingList{
+display: flex;
+justify-content: center;
+gap: 50px;
+
+li{
+    list-style: none;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #9F9F9F ;
+
+    &:hover{
+        color: #F71963;
+    }
+}
+
+}
+
+.BackgroundConfig{
+background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('../../public/assets/Rectangle 250.svg'), ;
+margin: 0;
+padding: 0;
+width: 1280px;
+height: 395px;
+
+button{
+    width: 227px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: rgba(247, 25, 99, 1);
+    border: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+
+    &:hover{
+        background-color: rgba(215, 0, 75);
+
+    }
+}
+span{
+    display: block;
+    font-size: 48px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF ;
+}
+
+label{
+    display: block;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF ;
+}
+}
+
+.ConfigSpace{
+margin-left: 83px;
+}
