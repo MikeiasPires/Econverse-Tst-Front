@@ -1,0 +1,120 @@
+.ContainerProducts{
+    width: 270px;
+    height: 500px;
+    border-radius: 10px;
+    border: none;
+    background-color:  rgba(255, 255, 255, 1);
+    -webkit-box-shadow: -5px 6px 16px -7px rgba(0,0,0,1);
+    -moz-box-shadow: -5px 6px 16px -7px rgba(0,0,0,1);
+    box-shadow: -5px 6px 16px -7px rgba(0,0,0,22);
+    
+    button {
+        width: 245px;
+        height: 44px;
+        border-radius: 4px;
+        background: rgba(247, 25, 99, 1);
+        border: none;
+
+        color: #FFFF;
+        font-size: 14px;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+
+        &:hover{
+            background-color: rgba(215, 0, 75);
+            cursor: pointer;
+        }
+        
+    }
+}
+
+.TitleStyle{
+
+    color: rgba(63, 63, 64, 1);
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+.PriceSale{
+
+    color: rgba(128, 128, 128, 1);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: line-through;
+   
+}
+
+.PriceTotal{
+
+    color: rgba(63, 63, 64, 1);
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+.PriceDiscount{
+
+    color: rgba(63, 63, 64, 1);
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Freight{
+
+    color: rgba(247, 25, 99, 1);
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+.PartnersContainer{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../../public/assets/Parceiros.svg');
+    width: 574px;
+    height: 350px;
+    border-radius: 10px;
+
+    h3{
+        margin-left: 60px;
+        color: rgba(255, 255, 255, 1);
+        font-size: 40px;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    span{
+        margin-left: 60px;
+        color: rgba(255, 255, 255, 1);
+        font-size: 16px;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    button{
+        margin-left: 60px;
+        margin-top: 20px;
+        width: 135px;
+        height: 48px;
+        border-radius: 10px;
+        background: rgba(247, 25, 99, 1);
+        border: none;
+        
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: 900;
+        font-family: 'Poppins', sans-serif;
+
+        &:hover{
+            background-color: rgba(215, 0, 75);
+            cursor: pointer;
+        }
+    }
+
+}

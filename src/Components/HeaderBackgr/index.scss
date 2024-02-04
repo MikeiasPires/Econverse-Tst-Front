@@ -1,5 +1,5 @@
 .HeadeCategory{
-    width: 1280px;
+    width: 100vw;
     height: 40px;
    
     border: solid 1px #F0F0F0;
@@ -20,8 +20,10 @@ li{
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     color: #9F9F9F ;
+    cursor: pointer;
 
     &:hover{
+        cursor: pointer;
         color: #F71963;
     }
 }
@@ -32,7 +34,7 @@ li{
 background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('../../public/assets/Rectangle 250.svg'), ;
 margin: 0;
 padding: 0;
-width: 1280px;
+width: 100vw;
 height: 395px;
 
 button{
@@ -47,11 +49,10 @@ button{
 
     &:hover{
         background-color: rgba(215, 0, 75);
-
+        cursor: pointer;
     }
 }
 span{
-    display: block;
     font-size: 48px;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
