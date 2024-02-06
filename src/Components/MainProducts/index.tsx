@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./index.scss";
 import { brandsdata } from "../../utils/dataBrands";
 import { paterns } from "../../utils/datapartners";
 import ArrowLeft from "../../public/assets/Esquerda.svg";
 import ArrowRigth from "../../public/assets/Direita.svg";
+import RIGTH from '../../public/assets/next.svg'
 import Modal from "../Modal";
 
 
@@ -13,6 +14,10 @@ function ProductsContainer() {
   const [armazen, setArmazen] = useState([]);
   const [selectProduct, SetSelectProduct] = useState([])
   const [open, SetOpen] = useState<Boolean>(false);
+
+  const styleContainer = useRef(null)
+  const StyleCircle = useRef(null)
+
   
 
   function aplicarDesconto(item) {
@@ -30,11 +35,31 @@ function ProductsContainer() {
     }
   }
   
-  // Aplicar desconto aos produtos
+  
   aplicarDesconto(armazen);
   
+  function handleclickLeftCircle(e){
+    e.preventDefault();
+    StyleCircle.current.scrollLeft += StyleCircle.current.offsetWidth; 
 
-  console.log(selectProduct)
+  }
+
+  function handleclickRigth(e){
+    e.preventDefault();
+    styleContainer.current.scrollLeft += styleContainer.current.offsetWidth; 
+
+  }
+
+
+
+  function handleclickLeft(e){
+    e.preventDefault();
+   styleContainer.current.scrollLeft -= styleContainer.current.offsetWidth; 
+
+
+  }
+
+
 
   function handleclick(item){
     SetSelectProduct(item)
@@ -56,7 +81,10 @@ function ProductsContainer() {
 
   return (
     <>
-      <div className="styleContainer">
+        <button>
+          <img src={ArrowLeft} onClick={handleclickLeft} alt="scroll Left" />
+        </button>
+      <div className="styleContainer" ref={styleContainer}>
         {armazen.map((item) => {
           return (
             <div className="ContainerProducts">
@@ -95,10 +123,14 @@ function ProductsContainer() {
             </div>
           );
         })}
-      </div>
-      <div>
         <Modal selectProduct={selectProduct}  isOpen={open}  setOpen={SetOpen}/>
+        
       </div>
+            <div>
+                 <button>
+                  <img src={ArrowRigth}  onClick={handleclickRigth} alt="scroll Rigth" />
+                </button>
+              </div>
       <div className="StylePart">
         {paterns.map((partintem) => {
           return (
@@ -132,8 +164,8 @@ function ProductsContainer() {
       <div className="NameTopic">
         <h1>Navegue por marcas</h1>
       </div>
-        <div className="StyleCircle">
-          {brandsdata.slice(0, 5).map((brands) => {
+        <div className="StyleCircle" ref={StyleCircle}>
+          {brandsdata.map((brands) => {
             return (
               <div className="BrandsCircle" key={brands.id}>
                 <img src={brands.image} alt="" />
@@ -141,6 +173,9 @@ function ProductsContainer() {
             );
           })}
         </div>
+        <button className="Buttonstyle" onClick={handleclickLeftCircle}> 
+         <img src={RIGTH} alt="" />
+        </button>
     </>
   );
 }

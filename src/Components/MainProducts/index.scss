@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    flex: none;
+ 
     width: 270px;
     height: 500px;
     border-radius: 10px;
@@ -237,16 +238,38 @@
 }
 
 .StyleCircle{
+    
     margin-top: 100px;
-    margin-left: 10px;
     display: flex;
     gap: 20px;
+    max-width: 75vw;
+    overflow-x: auto;
+    scroll-behavior: smooth;
 }
 
 .styleContainer{
     display: flex;
-    gap: 40px;
+    gap: 20px;
     margin-top: 20px;
+    max-width: 60vw;
+    max-height: 60vw;
 
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+   
 }
 
+.styleContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.Buttonstyle{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.StyleCircle::-webkit-scrollbar{
+    display: none;
+}
