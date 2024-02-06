@@ -132,7 +132,6 @@ function ProductsContainer() {
       <div className="NameTopic">
         <h1>Navegue por marcas</h1>
       </div>
-      <div className="teste">
         <div className="StyleCircle">
           {brandsdata.slice(0, 5).map((brands) => {
             return (
@@ -142,7 +141,6 @@ function ProductsContainer() {
             );
           })}
         </div>
-      </div>
     </>
   );
 }
