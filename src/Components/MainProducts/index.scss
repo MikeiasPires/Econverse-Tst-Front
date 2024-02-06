@@ -1,4 +1,8 @@
 .ContainerProducts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     width: 270px;
     height: 500px;
     border-radius: 10px;
@@ -7,7 +11,9 @@
     -webkit-box-shadow: -5px 6px 16px -7px rgba(0,0,0,1);
     -moz-box-shadow: -5px 6px 16px -7px rgba(0,0,0,1);
     box-shadow: -5px 6px 16px -7px rgba(0,0,0,22);
-    
+   
+
+
     button {
         width: 245px;
         height: 44px;
@@ -29,7 +35,7 @@
 }
 
 .TitleStyle{
-
+    margin-left: 15px;
     color: rgba(63, 63, 64, 1);
     font-size: 15px;
     font-weight: 300;
@@ -37,7 +43,8 @@
 }
 
 .PriceSale{
-
+    margin-left: 15px;
+    margin-top: 10px;
     color: rgba(128, 128, 128, 1);
     font-size: 16px;
     font-weight: 400;
@@ -47,7 +54,7 @@
 }
 
 .PriceTotal{
-
+    margin-left: 15px;
     color: rgba(63, 63, 64, 1);
     font-size: 20px;
     font-weight: 700;
@@ -56,6 +63,7 @@
 }
 
 .PriceDiscount{
+    margin-left: 15px;
 
     color: rgba(63, 63, 64, 1);
     font-size: 12px;
@@ -64,11 +72,18 @@
 }
 
 .Freight{
+    margin-left: 15px;
+    margin-top: 10px;
 
     color: rgba(247, 25, 99, 1);
     font-size: 12px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
+}
+
+.DirectionButton{
+    margin-left: 15px;
+    margin-top: 10px;
 }
 
 .PartnersContainer{
@@ -79,6 +94,89 @@
     background-image: url('../../public/assets/Parceiros.svg');
     width: 574px;
     height: 350px;
+    border-radius: 10px;
+
+    h3{
+        margin-left: 60px;
+        color: rgba(255, 255, 255, 1);
+        font-size: 40px;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    span{
+        margin-left: 60px;
+        color: rgba(255, 255, 255, 1);
+        font-size: 16px;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    button{
+        
+        margin-left: 60px;
+        margin-top: 20px;
+        width: 135px;
+        height: 48px;
+        border-radius: 10px;
+        background: rgba(247, 25, 99, 1);
+        border: none;
+        
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: 900;
+        font-family: 'Poppins', sans-serif;
+
+        &:hover{
+            background-color: rgba(215, 0, 75);
+            cursor: pointer;
+        }
+    }
+
+}
+
+.StylePart{
+    margin-top: 120px;
+    display: flex;
+    gap: 20px;
+}
+
+.StylePartTwo{
+    margin-top: 150px;
+    display: flex;
+    gap: 20px;
+}
+
+.NameTopic{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    span{
+        color: #3F3F40;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+    }
+
+
+    h1{
+      color: rgba(247, 25, 99, 1);
+      font-weight: 700;
+      font-family: 'Poppins', sans-serif;
+      font-size: 30px;
+    }
+  }
+
+
+  .PartnersContainertwo{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../../public/assets/Parceiros.svg');
+    width: 589px;
+    height: 284px;
     border-radius: 10px;
 
     h3{
@@ -117,4 +215,45 @@
         }
     }
 
+}
+
+.BrandsCircle{
+    display: flex;
+    align-items: center;
+    width: 211px;
+    height: 211px;
+    background-color: #FFFF;
+    border-radius: 100px;
+    border: none;
+    
+    -webkit-box-shadow: -5px 6px 16px -7px rgba(0,0,0,1);
+    -moz-box-shadow: -5px 6px 16px -7px rgba(0,0,0,1);
+    box-shadow: -5px 6px 16px -7px rgba(0,0,0,1);
+
+    img{
+        width: 172px;
+        margin-left: 20px;
+    }
+}
+
+.StyleCircle{
+    margin-top: 100px;
+    margin-left: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.styleContainer{
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+
+}
+
+.teste{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: auto;
+    scroll-behavior: smooth;
 }

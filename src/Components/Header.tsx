@@ -5,6 +5,7 @@ import { HeaderBack } from "./HeaderBackgr";
 import { RelatedProductsMenu } from "./RelatedProducts";
 import "./index.scss";
 import ProductsContainer from "./MainProducts";
+import Footer from "./PageFooter";
 
 export default function Header() {
   return (
@@ -15,6 +16,7 @@ export default function Header() {
         <HeaderBack/>
         <RelatedProductsMenu/>
         <ProductsContainer/>
+        <Footer/>
       </main>
     </>
   );

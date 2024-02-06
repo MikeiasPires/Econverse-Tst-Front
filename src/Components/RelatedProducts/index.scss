@@ -32,7 +32,25 @@
     display: inline;
   }
 
+.StyleBoxCategoy{
+    margin-top: 50px;
+    display: flex;
+    gap: 38px;
 
+  span{
+    color: rgba(78, 78, 78, 1);
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+  
+    &:hover{
+      cursor: pointer;
+      color: #F71963;
+  
+}
+  }
+
+}
 
   .SelectBoxCategory{
     
@@ -51,26 +69,11 @@
   
 }
 
-.StyleSpan{
-
-  margin-top: 24px;
-  span{
-    color: rgba(78, 78, 78, 1);
-    font-weight: 500;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-  
-    &:hover{
-      cursor: pointer;
-      color: #F71963;
-  }
-}
- 
-}
 
 .NameTopic{
   display: flex;
   align-items: center;
+  margin-top: 50px;
   h1{
     color: rgba(247, 25, 99, 1);
     font-weight: 700;

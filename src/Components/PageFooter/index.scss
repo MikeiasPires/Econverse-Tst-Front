@@ -1,0 +1,129 @@
+.FooterStyle{
+    width: 100vw;
+    height: 325px;
+    background: #2A2A2A;
+    margin-top: 150px;
+}
+
+.ContainerAboutUs{
+    display: flex;
+    flex-direction: column;
+    margin-left: 96px;
+}
+
+.AboutUs{
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: #ffff;
+    
+}
+
+
+.Content{
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    color: #ffff;
+    margin-top: 10px;
+}
+
+.InforStyle{
+    display: flex;
+    flex-direction: column;
+    
+}
+.AlignerGroup{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+  
+}
+
+.Infors{
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: #ffff;
+    margin-top: 80px;
+}
+
+.PayForms{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.BoxEmail{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     margin-left: 65%;
+
+
+    width: 380px;
+    height: 260px;
+    border-radius: 10px;
+    background-color: #ffff;
+}
+
+.Tittle{
+    margin-left: 50PX;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    color: #3F3F40;
+ 
+}
+
+.SuvTitle{
+    margin-left: 50PX;
+    font-size: 21px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: #3F3F40;
+}
+
+.Description{
+    margin-left: 60PX;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    color: #3F3F40;
+}
+
+.EmailStyle{
+    width: 230px;
+    height: 45px;
+    border: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #C0C0C0;
+    border: 1px solid #2A2A2A;
+}
+
+.StyleButton{
+    width: 62px;
+    height: 45px;
+    border-radius: 4px;
+    background-color: rgba(247, 25, 99, 1);
+    border: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+
+    &:hover{
+        background-color: rgba(215, 0, 75);
+        cursor: pointer;
+    }
+}
+
+.alignEmailContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+ }

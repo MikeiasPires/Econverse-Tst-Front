@@ -4,25 +4,22 @@ import { options } from "../../utils/dataRelated";
 import { CategoryBox } from "../../utils/dataCategory.ts";
 
 export function RelatedProductsMenu() {
-  console.log(CategoryBox);
-
   return (
     <>
+    <div className="StyleBoxCategoy">
       {CategoryBox.map((category) => (
-        <React.Fragment key={category.id}>
+        <div key={category.id}>
           <div className="SelectBoxCategory">
             <img
               src={category.img}
               alt="images"
               style={{ width: "61px", marginLeft: "30px" }}
             />
-          </div>
-          <div className="StyleSpan">
+          </div> 
             <span>{category.name}</span>
-          </div>
-        </React.Fragment>
+        </div>
       ))}
-
+</div>
       <div className="NameTopic">
         <span className="Linehorizontal"></span>
         <h1>Produtos relacionados</h1>
