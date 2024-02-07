@@ -39,13 +39,13 @@ export default function Modal({ isOpen, setOpen, selectProduct }: IntModal) {
               {" "}
               Veja mais detalhes do produto{" "}
             </span>
-            <div>
+            <div className="BoxNumber">
               <button>
-                <i></i>
+                  <i>-</i>
               </button>
               <span>2</span>
               <button>
-                <i></i>
+                <i>+</i>
               </button>
             </div>
             <button className="ButtonBuy">COMPRAR</button>

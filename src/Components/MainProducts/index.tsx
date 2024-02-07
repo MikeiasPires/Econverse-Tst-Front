@@ -81,10 +81,13 @@ function ProductsContainer() {
 
   return (
     <>
-        <button>
+        
+      <div className="styleContainer" ref={styleContainer}>
+        <div className="StyleArrow">
+        <button >
           <img src={ArrowLeft} onClick={handleclickLeft} alt="scroll Left" />
         </button>
-      <div className="styleContainer" ref={styleContainer}>
+        </div>
         {armazen.map((item) => {
           return (
             <div className="ContainerProducts">
@@ -123,14 +126,14 @@ function ProductsContainer() {
             </div>
           );
         })}
-        <Modal selectProduct={selectProduct}  isOpen={open}  setOpen={SetOpen}/>
-        
-      </div>
-            <div>
+         <div  className="StyleArrowRigth">
                  <button>
                   <img src={ArrowRigth}  onClick={handleclickRigth} alt="scroll Rigth" />
                 </button>
               </div>
+        <Modal selectProduct={selectProduct}  isOpen={open}  setOpen={SetOpen}/>
+      </div>
+            
       <div className="StylePart">
         {paterns.map((partintem) => {
           return (
@@ -172,10 +175,13 @@ function ProductsContainer() {
               </div>
             );
           })}
-        </div>
-        <button className="Buttonstyle" onClick={handleclickLeftCircle}> 
+          <div className="Buttonstyle">
+            <button onClick={handleclickLeftCircle}> 
          <img src={RIGTH} alt="" />
         </button>
+        </div>
+        </div>
+      
     </>
   );
 }

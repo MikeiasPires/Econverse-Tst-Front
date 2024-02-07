@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.scss"; 
 import { options } from "../../utils/dataRelated";
-import { CategoryBox } from "../../utils/dataCategory.ts";
+import { CategoryBox } from "../../utils/dataCategory";
 
 export function RelatedProductsMenu() {
   return (

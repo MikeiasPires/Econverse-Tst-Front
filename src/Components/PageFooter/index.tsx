@@ -10,7 +10,9 @@ import Elo from "../../public/assets/elo.svg";
 import Ticket from "../../public/assets/ticket.svg";
 import Mastercard from "../../public/assets/mastercard.svg";
 import Alelo from "../../public/assets/alelo.svg";
-
+import Facebook from '../../public/assets/facebook.svg'
+import Insta from '../../public/assets/instagram.svg'
+import Youtube from '../../public/assets/youtube.svg'
 
 
 export default function Footer() {
@@ -22,11 +24,11 @@ export default function Footer() {
           <span className="Content"> Conheça</span>
           <span className="Content"> Como Comprar</span>
           <span className="Content"> Indicação de desconto</span>
+        <div className="Direction" >
+          <img src={Facebook} alt="" />
+          <img src={Insta} alt="" />
+          <img src={Youtube} alt="" />
         </div>
-        <div>
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
         </div>
         <div>
           <div className="InforStyle">
@@ -39,38 +41,46 @@ export default function Footer() {
             <span className="Content"> Troca de soluções</span>
           </div>
         </div>
-        <div>
-      </div>
-      <div>
-      </div>
-          <div className="PayForms">
-            <img src={Visa} alt="" />
-            <img src={Dinners} alt="" />
-            <img src={Pix} alt="" />
-            <img src={Sodexo} alt="" />
-          </div>
-          <div className="PayForms">
-          <img src={Elo} alt="" />
-            <img src={Ifood} alt="" />
-            <img src={Amex} alt="" />
-          </div>
-          <div className="PayForms">
-          <img src={Alelo}  alt="" />
-            <img src={Mastercard} alt="" />
-            <img src={Ticket} alt="" />
-            </div>
-          </div>
-          <div className="BoxEmail">
-           <div>
-            <span className="Tittle"> Cadastre-se e Receba nossas </span>
-            <span className="SuvTitle"> novidades e promoções <br/></span>
-            <span className="Description">Excepteur sint occaecat cudatat non ent,</span>
-           </div>
-           <div className="alignEmailContainer">
-           <input className="EmailStyle" placeholder="SEU E-MAIL" type="email" name="" id="" />
-           <button className="StyleButton"> OK</button>
-           </div>
-          </div>
+        <div className="PayForms">
+          <img src={Visa} alt="" />
+          <img src={Dinners} alt="" />
+          <img src={Pix} alt="" />
+          <img src={Sodexo} alt="" />
         </div>
+        <div className="PayForms">
+          <img src={Elo} alt="" />
+          <img src={Ifood} alt="" />
+          <img src={Amex} alt="" />
+        </div>
+        <div className="PayForms">
+          <img src={Alelo} alt="" />
+          <img src={Mastercard} alt="" />
+          <img src={Ticket} alt="" />
+        </div>
+     
+      <div className="BoxEmail">
+        <div>
+          <span className="Tittle"> Cadastre-se e Receba nossas </span>
+          <span className="SuvTitle">
+            {" "}
+            novidades e promoções <br />
+          </span>
+          <span className="Description">
+            Excepteur sint occaecat cudatat non ent,
+          </span>
+        </div>
+        <div className="alignEmailContainer">
+          <input
+            className="EmailStyle"
+            placeholder="SEU E-MAIL"
+            type="email"
+            name=""
+            id=""
+          />
+          <button className="StyleButton"> OK</button>
+        </div>
+      </div>
+      </div>
+    </div>
   );
 }

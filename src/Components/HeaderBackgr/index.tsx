@@ -7,7 +7,7 @@ export function HeaderBack() {
 
   return (
     <div>
-      <div className="HeadeCategory">
+      <div className="HeaderCategory">
         <ul className="StruturingList">
           {headerBackData.map((item) => {
             return (

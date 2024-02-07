@@ -226,6 +226,7 @@
     background-color: #FFFF;
     border-radius: 100px;
     border: none;
+    margin-left: 20px;
     
     -webkit-box-shadow: -5px 6px 16px -7px rgba(0,0,0,1);
     -moz-box-shadow: -5px 6px 16px -7px rgba(0,0,0,1);
@@ -239,10 +240,12 @@
 
 .StyleCircle{
     
-    margin-top: 100px;
-    display: flex;
+    margin-top: 50px;
     gap: 20px;
-    max-width: 75vw;
+    display: flex;
+    align-items: center;
+    max-width: 80vw;
+    max-height: 100vw;
     overflow-x: auto;
     scroll-behavior: smooth;
 }
@@ -251,10 +254,10 @@
     display: flex;
     gap: 20px;
     margin-top: 20px;
-    max-width: 60vw;
-    max-height: 60vw;
+    max-width: 80vw;
+    max-height: 80vw;
 
-    overflow-x: auto;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 
    
@@ -265,11 +268,48 @@
 }
 
 .Buttonstyle{
-    background: transparent;
-    border: none;
-    cursor: pointer;
+     
+    position: absolute;
+    left: 89%;
+
+    button{
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+
 }
 
 .StyleCircle::-webkit-scrollbar{
     display: none;
+    background-color:#FFFFFF;
+}
+
+.StyleArrow{
+    position: absolute;
+    right: 92%;
+    top: 160%;
+
+    button{
+        cursor: pointer;
+        background: transparent;
+        border: none;
+    }
+
+   
+}
+
+.StyleArrowRigth{
+    position: absolute;
+    left: 92%; 
+    top: 160%;
+
+    button{
+        cursor: pointer;
+        background: transparent;
+        border: none;
+    }
+
+
 }
